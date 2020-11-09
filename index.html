@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML forme</title>
+</head>
+<body>
+
+<b>Forma, ki poslje podatke v json formatu:</b>
+<form enctype="application/json" action="http://localhost:4000/raw" method="POST">
+    <label for="name">Enter your name: </label>
+    <input type="text" name="name" id="name" required>
+    <label>
+        Vnesi besedilo:
+        <input name="besedilo" type="text" placeholder="Enter text ..." />
+    </label>
+    <label>
+        Vnesi datum:
+        <input name="datum" type="date" />
+    </label>
+    <input type="submit" value="Send" />
+</form>
+
+<b>Forma, ki poslje podatke v json formatu:</b>
+<form action="http://localhost:4000/raw" enctype="application/x-www-form-urlencoded" method="POST">
+    <label>
+        Vnesi besedilo:
+        <textarea name="besedilo" cols="8" placeholder="Enter text ..."></textarea>
+    </label>
+    <label>
+        Vnesi datum:
+        <input name="datum" type="date" />
+    </label>
+    <input type="submit" value="Send" />
+</form>
+
+</body>
+</html>
